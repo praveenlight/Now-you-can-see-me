@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.tensorflow.lite.examples.detection">
 
     <uses-sdk />
@@ -10,10 +11,11 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
+        tools:node="replace"
         android:allowBackup="false"
-        android:icon="@drawable/ic_launcher"
-        android:label="Watch Tower"
-        android:roundIcon="@drawable/ic_launcher"
+        android:icon="@drawable/wt"
+        android:label="Now you see me"
+        android:roundIcon="@drawable/wt"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".tapscreen"></activity>
@@ -22,7 +24,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".splash"
-            android:label="@string/activity_name_detection"
+            android:label="Now you see me"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
